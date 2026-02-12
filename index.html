@@ -220,35 +220,14 @@
     .chapter-header {
       background: #f0f4f8;
       padding: 20px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       font-weight: 600;
       color: #2d7d4a;
       font-size: 16px;
-    }
-
-    .chapter-header:hover {
-      background: #e8ecf1;
-    }
-
-    .chapter-toggle {
-      font-size: 18px;
-      transition: transform 0.3s ease;
-    }
-
-    .chapter-toggle.open {
-      transform: rotate(180deg);
+      border-bottom: 1px solid #e2e8f0;
     }
 
     .chapter-content {
-      display: none;
       padding: 20px;
-      border-top: 1px solid #e2e8f0;
-    }
-
-    .chapter-content.open {
       display: block;
     }
 
@@ -260,34 +239,12 @@
     .lecture-item {
       padding: 12px 0;
       border-bottom: 1px solid #eee;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       font-size: 14px;
       color: #555;
     }
 
     .lecture-item:last-child {
       border-bottom: none;
-    }
-
-    .lecture-status {
-      font-size: 12px;
-      padding: 4px 8px;
-      border-radius: 4px;
-      background: #e8ecf1;
-      color: #2d7d4a;
-      font-weight: 600;
-    }
-
-    .lecture-status.available {
-      background: #d4edda;
-      color: #155724;
-    }
-
-    .lecture-status.upcoming {
-      background: #fff3cd;
-      color: #856404;
     }
 
     footer {
@@ -319,10 +276,6 @@
 
       .section-title {
         font-size: 22px;
-      }
-
-      .chapter-header {
-        flex-wrap: wrap;
       }
     }
   </style>
@@ -406,280 +359,115 @@
   <!-- Detailed Syllabus -->
   <section class="syllabus-section">
     <div class="container">
-      <h2 class="syllabus-title">Detailed Course Syllabus</h2>
+      <h2 class="syllabus-title">Complete Course Syllabus</h2>
 
       <!-- Chapter 1: Initial Setup -->
       <div class="course-chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)">
-          <span>1. Initial Setup</span>
-          <span class="chapter-toggle">▼</span>
-        </div>
+        <div class="chapter-header">1. Initial Setup</div>
         <div class="chapter-content">
           <ul class="lecture-list">
-            <li class="lecture-item">
-              <span>Installation, packages, connection to IBKR</span>
-              <span class="lecture-status available">Preview</span>
-            </li>
-            <li class="lecture-item">
-              <span>Initial configuration of DAS Trader</span>
-              <span class="lecture-status available">Preview</span>
-            </li>
-            <li class="lecture-item">
-              <span>Formatting the layout</span>
-              <span class="lecture-status available">Preview</span>
-            </li>
-            <li class="lecture-item">
-              <span>Watchlist</span>
-              <span class="lecture-status available">Preview</span>
-            </li>
+            <li class="lecture-item">Installation, packages, connection to IBKR</li>
+            <li class="lecture-item">Initial configuration of DAS Trader</li>
+            <li class="lecture-item">Formatting the layout</li>
+            <li class="lecture-item">Watchlist</li>
           </ul>
         </div>
       </div>
 
       <!-- Chapter 2: Working with Charts -->
       <div class="course-chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)">
-          <span>2. Working with Charts</span>
-          <span class="chapter-toggle">▼</span>
-        </div>
+        <div class="chapter-header">2. Working with Charts</div>
         <div class="chapter-content">
           <ul class="lecture-list">
-            <li class="lecture-item">
-              <span>Chart Configuration</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Chart Data configuration</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Chart Area Configuration</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Scaling and zooming of the chart</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Chart Formatting</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Timeframes</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Indicators</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Indicator hotkeys</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>How to add ATR</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>How to plot daily SMAs on intraday chart</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Drawing Tools overview</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Drawing Lines</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Drawing Rectangles</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Drawing Fibonacci Lines</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Drawing Fibonacci extensions and Measured Moves</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Drawing Parallel Channels</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Adding Text</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Setting up Alerts</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Chapter Summary</span>
-              <span class="lecture-status available">Start</span>
-            </li>
+            <li class="lecture-item">Chart Configuration</li>
+            <li class="lecture-item">Chart Data configuration</li>
+            <li class="lecture-item">Chart Area Configuration</li>
+            <li class="lecture-item">Scaling and zooming of the chart</li>
+            <li class="lecture-item">Chart Formatting</li>
+            <li class="lecture-item">Timeframes</li>
+            <li class="lecture-item">Indicators</li>
+            <li class="lecture-item">Indicator hotkeys</li>
+            <li class="lecture-item">How to add ATR</li>
+            <li class="lecture-item">How to plot daily SMAs on intraday chart</li>
+            <li class="lecture-item">Drawing Tools overview</li>
+            <li class="lecture-item">Drawing Lines</li>
+            <li class="lecture-item">Drawing Rectangles</li>
+            <li class="lecture-item">Drawing Fibonacci Lines</li>
+            <li class="lecture-item">Drawing Fibonacci extensions and Measured Moves</li>
+            <li class="lecture-item">Drawing Parallel Channels</li>
+            <li class="lecture-item">Adding Text</li>
+            <li class="lecture-item">Setting up Alerts</li>
+            <li class="lecture-item">Chapter Summary</li>
           </ul>
         </div>
       </div>
 
       <!-- Chapter 3: Order Placing -->
       <div class="course-chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)">
-          <span>3. Order Placing</span>
-          <span class="chapter-toggle">▼</span>
-        </div>
+        <div class="chapter-header">3. Order Placing</div>
         <div class="chapter-content">
           <ul class="lecture-list">
-            <li class="lecture-item">
-              <span>Introduction</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Basic Montage hotkeys</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Basic Orders, hotkeys, hot buttons</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Close position, Reverse position, Set stop to breakeven</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Hot buttons for Close position, Reverse position, Set Stop to breakeven</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Setting stop loss and take profit</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Buy and sell fractions of position</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Add OCO order to existing position</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Defined risk orders with brackets</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Defined risk limit order with brackets</span>
-              <span class="lecture-status available">Start</span>
-            </li>
+            <li class="lecture-item">Introduction</li>
+            <li class="lecture-item">Basic Montage hotkeys</li>
+            <li class="lecture-item">Basic Orders, hotkeys, hot buttons</li>
+            <li class="lecture-item">Close position, Reverse position, Set stop to breakeven</li>
+            <li class="lecture-item">Hot buttons for Close position, Reverse position, Set Stop to breakeven</li>
+            <li class="lecture-item">Setting stop loss and take profit</li>
+            <li class="lecture-item">Buy and sell fractions of position</li>
+            <li class="lecture-item">Add OCO order to existing position</li>
+            <li class="lecture-item">Defined risk orders with brackets</li>
+            <li class="lecture-item">Defined risk limit order with brackets</li>
           </ul>
         </div>
       </div>
 
       <!-- Chapter 4: Trading Options -->
       <div class="course-chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)">
-          <span>4. Trading Options</span>
-          <span class="chapter-toggle">▼</span>
-        </div>
+        <div class="chapter-header">4. Trading Options</div>
         <div class="chapter-content">
           <ul class="lecture-list">
-            <li class="lecture-item">
-              <span>Introduction and initial setup</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Layout for options trading, hotkeys and hot buttons</span>
-              <span class="lecture-status available">Start</span>
-            </li>
+            <li class="lecture-item">Introduction and initial setup</li>
+            <li class="lecture-item">Layout for options trading, hotkeys and hot buttons</li>
           </ul>
         </div>
       </div>
 
       <!-- Chapter 5: Other Features -->
       <div class="course-chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)">
-          <span>5. Other Features</span>
-          <span class="chapter-toggle">▼</span>
-        </div>
+        <div class="chapter-header">5. Other Features</div>
         <div class="chapter-content">
           <ul class="lecture-list">
-            <li class="lecture-item">
-              <span>Risk Management</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>High Low Ticker, Top List, Fundamental data, Executions Report</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Trade Signal</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Market Replay Feature</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Network Delays</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Screen Recording</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Multiple tabs and monitors</span>
-              <span class="lecture-status available">Start</span>
-            </li>
+            <li class="lecture-item">Risk Management</li>
+            <li class="lecture-item">High Low Ticker, Top List, Fundamental data, Executions Report</li>
+            <li class="lecture-item">Trade Signal</li>
+            <li class="lecture-item">Market Replay Feature</li>
+            <li class="lecture-item">Network Delays</li>
+            <li class="lecture-item">Screen Recording</li>
+            <li class="lecture-item">Multiple tabs and monitors</li>
           </ul>
         </div>
       </div>
 
       <!-- Chapter 6: Advanced Hotkeys Examples -->
       <div class="course-chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)">
-          <span>6. Advanced Hotkeys Examples</span>
-          <span class="chapter-toggle">▼</span>
-        </div>
+        <div class="chapter-header">6. Advanced Hotkeys Examples</div>
         <div class="chapter-content">
           <ul class="lecture-list">
-            <li class="lecture-item">
-              <span>Overview</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>No longs under VWAP</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>No New trades after $500 loss</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Plot 20 EMA from 1hr chart on smaller timeframe</span>
-              <span class="lecture-status available">Start</span>
-            </li>
-            <li class="lecture-item">
-              <span>Course summary</span>
-              <span class="lecture-status available">Start</span>
-            </li>
+            <li class="lecture-item">Overview</li>
+            <li class="lecture-item">No longs under VWAP</li>
+            <li class="lecture-item">No New trades after $500 loss</li>
+            <li class="lecture-item">Plot 20 EMA from 1hr chart on smaller timeframe</li>
+            <li class="lecture-item">Course summary</li>
           </ul>
         </div>
       </div>
 
       <!-- Chapter 7: Congratulations -->
       <div class="course-chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)">
-          <span>7. Course Completion</span>
-          <span class="chapter-toggle">▼</span>
-        </div>
+        <div class="chapter-header">7. Course Completion</div>
         <div class="chapter-content">
           <ul class="lecture-list">
-            <li class="lecture-item">
-              <span>Congratulations - You've completed the DAS Trader Pro Course!</span>
-              <span class="lecture-status available">Start</span>
-            </li>
+            <li class="lecture-item">Congratulations - You've completed the DAS Trader Pro Course!</li>
           </ul>
         </div>
       </div>
@@ -699,14 +487,5 @@
     </div>
   </footer>
 
-  <script>
-    function toggleChapter(headerElement) {
-      const toggle = headerElement.querySelector('.chapter-toggle');
-      const content = headerElement.nextElementSibling;
-
-      toggle.classList.toggle('open');
-      content.classList.toggle('open');
-    }
-  </script>
 </body>
 </html>
